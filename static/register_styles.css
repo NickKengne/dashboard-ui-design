@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Poppins:wght@900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-primary: #6c9bcf;
+  --color-danger: #ff0060;
+  --color-success: #1b9c85;
+  --color-warning: #f7d060;
+  --color-white: #fff;
+  --color-info-dark: #7d8da1;
+  --color-dark: #363949;
+  --color-light: rgba(132, 139, 200, 0.18);
+  --color-dark-variant: #677483;
+  --color-background: #f6f6f9;
+
+  --card-border-radius: 2rem;
+  --border-radius-1: 0.4rem;
+  --border-radius-2: 1.2rem;
+
+  --card-padding: 1.8rem;
+  --padding-1: 1.2rem;
+
+  --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--color-dark);
+}
+
+#register_main {
+  width: 470px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  background-color: var(--color-dark);
+  box-shadow: var(--box-shadow);
+}
+
+#register_main > h1 {
+  margin-top: 10px;
+  padding: 15px;
+  font-size: 25px;
+  color: var(--color-background);
+}
+
+#register_form {
+  width: 100%;
+  padding: 20px;
+  height: 100%;
+}
+
+.form_fields {
+  margin-top: 12px;
+}
+label {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: var(--color-dark);
+  border: none;
+  border-bottom: 1px solid #ffffff40;
+  outline: none;
+  color: var(--color-white);
+  margin-top: 10px;
+}
+
+input::placeholder{
+  color: var(--color-dark-variant);
+  font-family: "poppins" , sans-serif;
+  font-weight: 300 !important
+}
+button {
+  border: 1px solid var(--color-danger);
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-dark);
+  text-transform: uppercase;
+  background: linear-gradient(to left , transparent 50% , var(--color-danger) 50%);
+  background-size: 200%;
+  transition: all .4s ease-out;
+  margin-top: 30px;
+  width: 100%;
+}
+
+button:hover {
+  cursor: pointer;
+  background-position: 100%;
+  background-color: var(--color-white);
+  color: var(--color-dark);
+  border: 1px solid var(--color-dark);
+}
+
+#register_form > p {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.error {
+  display: none;
+  color: var(--color-danger);
+}
+
+.bottom-condition{
+  color: var(--color-background);
+}
+.bottom-condition a{
+  color: var(--color-danger);
+  text-decoration: none;
+}
